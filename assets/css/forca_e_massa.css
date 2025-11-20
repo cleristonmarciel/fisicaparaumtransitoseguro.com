@@ -1,0 +1,342 @@
+/* Este arquivo deve ser linkado APÓS o style.css base na sua página HTML */
+
+/* SOBRESCRITA DO HERO PARA A PÁGINA ESPECÍFICA */
+.page-hero {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Altura menor para páginas internas */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/bolasfisica.jpg'); /* Imagem específica para leis */
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.lei-card-video {
+    width: 700px;
+    height: 100px;
+}
+
+.lei-card-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    background-color: #fdfdeb;
+}
+
+.lei-card-video {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Alinha verticalmente */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* Fundo branco para o card */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.lei-card-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.lei-ilustracao-video {
+    flex: 0 0 300px; /* Largura fixa para a imagem */
+    max-width: 40%; /* Ajuste para responsividade */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.lei-ilustracao-video img {
+    width: 100%;
+    height: 120px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    background-size: contain;
+}
+
+
+.page-hero .container {
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.page-hero h1 {
+    font-size: 3rem; /* Título um pouco menor que o da home */
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* SEÇÃO DE INTRODUÇÃO GERAL ÀS LEIS */
+
+
+.lei-secao.alternada i {
+    
+    margin-left: 5px;
+    
+}
+
+
+.lei-card {
+
+    width: 700px;
+    
+}
+ .lei-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    background-color: #fdfdeb;
+}
+
+
+.lei-video {
+    flex: 1;
+    min-width: 300px; /* Garante que não fique muito estreito */
+}
+
+.lei-video h2 {
+    font-size: 2rem;
+    color: #23272b;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lei-video a {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #3b3b3b;
+    list-style: none;
+    text-decoration: none;
+}
+
+.lei-video a:hover {
+
+    color: #f1c344;
+}
+
+.leis-introducao {
+    padding:60px 10px;
+    background: linear-gradient(#fbf5e4, #faf9f6);
+    text-align: center;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.leis-introducao h2 {
+    font-size: 2.5rem;
+    color: #23272b;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.leis-introducao p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+}
+
+/* SEÇÕES INDIVIDUAIS DAS LEIS */
+.lei-secao {
+    padding: 60px 0;
+    background-color: #faf9f6;
+    border-bottom: 1px solid #eee; /* Separador sutil */
+}
+
+/* Fundo alternado para melhor legibilidade */
+.lei-secao:nth-of-type(odd) {
+    background-color: #fbf5e4; /* Cor mais clara do seu gradiente */
+}
+
+.lei-card {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Alinha verticalmente */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* Fundo branco para o card */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.lei-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.lei-conteudo {
+    flex: 1;
+    min-width: 300px; /* Garante que não fique muito estreito */
+}
+
+.lei-conteudo h2 {
+    font-size: 2rem;
+    color: #23272b;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lei-conteudo p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.lei-ilustracao {
+    flex: 0 0 350px; /* Largura fixa para a imagem */
+    max-width: 40%; /* Ajuste para responsividade */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.lei-ilustracao img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lei-card:hover .lei-ilustracao img {
+    transform: scale(1.03); /* Leve zoom na imagem ao passar o mouse */
+}
+
+/* Inverte a ordem para seções alternadas */
+.lei-secao.alternada .lei-card {
+    flex-direction: row-reverse;
+}
+
+.lei-secao.alternada h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ESTILO PARA FÓRMULAS */
+.formula {
+    background-color: #eee;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: 'PT Serif', serif; /* Fonte para fórmulas */
+    font-size: 1.15rem;
+    color: #333;
+    text-align: center;
+}
+.formula p {
+    margin: 5px 0; /* Espaçamento entre as linhas da fórmula */
+    color: #333;
+}
+.formula .MathJax_Display {
+    margin-top: 10px; /* Espaçamento da fórmula MathJax */
+}
+
+
+/* SEÇÃO FINAL DE APLICAÇÕES */
+.aplicacoes {
+    padding: 80px 0;
+    background-color: #fbf5e4; /* Cor de fundo que já usa */
+    text-align: center;
+}
+
+.aplicacoes h2 {
+    font-size: 2.5rem;
+    color: #23272b;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aplicacoes p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+}
+
+.call-to-action .btn-destaque {
+    /* O estilo do botão já vem do style.css base */
+    margin-top: 20px;
+}
+
+
+/* MEDIA QUERIES ESPECÍFICAS PARA ESTA PÁGINA */
+@media (max-width: 992px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+    .page-hero p {
+        font-size: 1rem;
+    }
+    .lei-card {
+        flex-direction: column; /* Pilha em telas menores */
+        text-align: center;
+    }
+    .lei-secao.alternada .lei-card {
+        flex-direction: column; /* Também pilha */
+    }
+    .lei-ilustracao {
+        max-width: 80%; /* Ajuste para ocupar mais espaço */
+        margin-bottom: 25px; /* Espaço abaixo da imagem */
+    }
+    .lei-conteudo h2 {
+        font-size: 1.8rem;
+    }
+    .lei-conteudo p {
+        font-size: 1rem;
+    }
+    .leis-introducao h2, .aplicacoes h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-hero {
+        height: 250px;
+    }
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+    .page-hero p {
+        font-size: 0.9rem;
+    }
+    .lei-ilustracao {
+        flex: 0 0 100%; /* Ocupa largura total */
+        max-width: 100%;
+    }
+    .lei-conteudo h2 {
+        font-size: 1.5rem;
+    }
+    .lei-conteudo p {
+        font-size: 0.9rem;
+    }
+    .formula {
+        font-size: 1rem;
+    }
+    .leis-introducao h2, .aplicacoes h2 {
+        font-size: 1.6rem;
+    }
+}
